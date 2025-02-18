@@ -1,0 +1,226 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-nav-bar, .left-nav, .right-nav, .main-view, .main-btn{
+   display: flex; 
+   align-items: center;
+}
+
+.main-nav-bar{
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 1px;
+    background-color: white;
+    z-index: 9999;
+}
+
+a{
+    text-decoration: none;
+    color: darkgray;
+}
+
+.left-nav{
+    gap: 20px;
+}
+
+.title-img{
+    width: 30px;;
+    height:30px;
+    cursor: pointer;
+}
+
+.title{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.right-nav{
+    gap: 30px;
+    color: darkgray;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    color: crimson;
+}
+.btn-2:hover{
+    color: crimson;
+}
+.btn-3:hover{
+    color: crimson;
+}
+.btn-4:hover{
+    color: crimson;
+}
+
+.hire-btn{
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+.hire-btn:hover{
+    color: aliceblue;
+    background-color: crimson;
+}
+
+.main-view{
+    gap: 200px;
+    padding: 30px 100px;
+
+}
+
+.left-view{
+    position: relative;
+}
+
+.human-img{
+    width: 500px;;
+    height:700px;
+    border-radius: 30px;
+}
+
+.small-img{
+    position: absolute;
+    left: -70px;
+    top: 350px;
+    width: 170px;;
+    height:170px;
+}
+
+.main-title{
+
+    font-size: 100px;
+}
+
+.main-btn{
+    gap: 50px;
+}
+
+.main-btn-1, .main-btn-2{
+    padding: 20px 70px;
+    cursor: pointer;
+}
+
+.main-btn-1{
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+.main-btn-1:hover{
+    color: aliceblue;
+    background-color: crimson;
+}
+
+.main-btn-2{
+    border: 2px solid;
+}
+
+.main-btn-2:hover{
+    color: crimson;
+}
+
+.small-title, .main-btn, .small-title-2{
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.small-title{
+    opacity: 0.5;
+}
+
+.small-title-2{
+    opacity: 0.3;
+}
+
+.about{
+    position: relative;
+    margin-top: 100px;
+    height: 90vh;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.644);
+
+}
+
+.ani-box{
+    width: 99.2vw;
+    overflow: hidden;
+}
+
+.ani-over{
+    display: flex;
+    width: 300vw;
+    animation: backgrounAni 10s linear infinite;
+}
+
+@keyframes backgrounAni {
+    0%{
+        margin-left: 0vw;
+    }
+    25%{
+        margin-left: -100vw;
+    }
+    50%{
+        margin-left: -100vw;
+    }
+    75%{
+        margin-left: -200vw;
+    }
+    
+    100%{
+        margin-left: -200vw;
+    }
+}
+
+.pic1{
+    background-image: url("https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg?auto=compress&cs=tinysrgb&w=600") ;
+    height: 90vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+}
+.pic2{
+    background-image: url("https://images.pexels.com/photos/2049422/pexels-photo-2049422.jpeg?auto=compress&cs=tinysrgb&w=600") ;
+    height: 90vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+}
+.pic3{
+    background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&w=600") ;
+    height: 90vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+}
+
+.about-title{
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.about-text{
+    color: white;
+    text-align: center;
+    margin: 20vh 30vw 0;
+    letter-spacing: 5px;
+}
+
+.about-flout{
+    position: absolute;
+    top: 0;
+}

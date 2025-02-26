@@ -4,40 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="cp-style.css">
+    <title>Portfolio</title>
 </head>
 <body>
     <div id="home"></div>
     <div class="main-nav-bar">
         <div class="left-nav">
             <img class="title-img" src="https://th.bing.com/th/id/R.f620109cf09c199e74ff5cdc68609608?rik=NH%2ftiz7F1TZBTw&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2016%2f05%2fvector-logo-templates_403097.png&ehk=noSy1RiiCIO3MC3VGzniSWAzCKvExLFgJe4zLJu6dMg%3d&risl=&pid=ImgRaw&r=0">
-            <div class="title">Codescape</div>
+            <div class="title">MyPortfolio</div>
         </div>
         <div class="right-nav">
-            <div><a class="btn-1" href="#home">Home</a></div>
-            <div><a class="btn-2" href="#about">About</a></div>
-            <div class="btn-3">Project</div>
-            <div class="btn-4">Content</div>
-            <div class="hire-btn">Hire Me</div>
+            <div onclick="menu()" class="menuPic" ></div>
+            <div class="coll-nav" id="menu">
+                <div><a id="btn-1" class="HV btn-1" href="#home">Home</a></div>
+                <div><a id="btn-2"  class="HV btn-2" href="#about">About</a></div>
+                <div><a id="btn-3"  class="HV btn-3" href="#project">Project</a></div>
+                <div><a id="btn-4"  class="HV hire-btn" href="#contact">Hire Me</a></div>
+            </div>
         </div>
     </div>
+
     <div class="main-view">
         <div class="left-view">
-            <img class="human-img" src="https://theblast.prod.media.wordpress.mattersmedia.io/brand-img/123/0x0/2025/01/21130533/justin-baldoni-scaled.jpg?">
-            <img class="small-img" src="https://png.pngtree.com/png-vector/20240527/ourmid/pngtree-colorful-hand-in-motion-logos-vector-png-image_6947388.png">
+            <img class="human-img" src="https://scontent.fmnl37-2.fna.fbcdn.net/v/t39.30808-6/480565857_642392051486758_7124032658580847381_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGkDWexpkt_Sv1raNDV7uLIctjBsf-PCPNy2MGx_48I87plhnDKLCGLI0ZUnQr5FKN_VDSg1bNvA9zmoJqfO2qU&_nc_ohc=-jGDwqR-9cYQ7kNvgF4xVdc&_nc_oc=AdiMnJ7IY5-9TvaltD4HBHxA8b01LrdcWMouZsgdndE4IG9C7ipbLUR2TWG-ltdPP_4&_nc_zt=23&_nc_ht=scontent.fmnl37-2.fna&_nc_gid=Ar2WlKbAOP20yQSg99j_wO_&oh=00_AYBms3jih-8PymnY5_TFDjuHuSg9mCNQtpcb5xQUPGVCdg&oe=67BF569C">
+            <img class="small-img" src="https://www.freepnglogos.com/uploads/certified-png/certified-hq-transparent-circle-image-3.png">
         </div>
         <div class="right-view">
             <div class="main-title">Explor My <br>Portfolio</div>
             <div class="small-title">Discover My Expertise as a Full-Stack Developer</div>
             <div class="main-btn">
-                <div class="main-btn-1">Resume</div>
-                <div class="main-btn-2">Contact</div>
+                <div><a id="btn-5"  class="main-btn-1" href="#about">Resume</a></div>
+                <div><a id="btn-6"  class="main-btn-2" href="#contact">Contact</a></div>
             </div>
             <div class="small-title-2">Crafting Innovative Digital Solutions for Your Business</div>
         </div>
     </div>
-    
-    
+
     <div class="about" id="about">
         <div class="ani-box">
             <div class="ani-over">
@@ -55,7 +58,100 @@
                 Hello, my name is Tom Carlo Ballesca, and I believe that focusing on your company's data security plan is essential to growing your company's business. With over 10 years of experience in information and data security, my knowledge and skills can help you create effective security strategies. My dedication to creating comprehensive data security plans can also help your company improve its data integrity and increase customer retention.
             </div>
         </div>
+    </div>
+
+    <div class="project" id="project">
+        <div class="project-set">
+            <img class="project-img-1" src="project1.png">
+            <div class="project-text">
+                <h2>Hanasaku ordering app</h2>
+                <div class="pro-text">The purpose of this app is to allow users to browse and order food items, specifically Yakiniku and Hot Pot sets, from a digital menu.</div>
+            </div>
+        </div>
+
+        <div class="project-set">
+            <img class="project-img-2" src="project2.png">
+            <div class="project-text">
+                <h2>WCC Library thesis repository system</h2>
+                <div class="pro-text">The purpose of a WCC Thesis Repository System is to provide a centralized, digital platform for World Citi Colleges (WCC) students and faculty to store, access, and manage completed thesis and research projects.</div>
+            </div>
+            <img class="project-img-1 hide" src="project2.png">
+        </div>
+
+        <div class="project-set">
+            <img class="project-img-1" src="project4.png">
+            <div class="project-text">
+                <h2>Experemental IO game</h2>
+                <div class="pro-text">Experemental IO game is to move the red dot within the boundaries of the rectangle, potentially interacting with other elements (not shown) to achieve a goal, such as growing in size, avoiding obstacles.</div>
+            </div>
+        </div>
+
+        <div class="project-set">
+            <img class="project-img-2" src="project5.png">
+            <div class="project-text">
+                <h2>Prototype Chatbot that can answer questions</h2>
+                <div class="pro-text">The purpose of this prototype chatbot is to:<br>Demonstrate a basic conversational interface where a user can input text and receive responses, even if those responses indicate the system doesn't understand the input ("this word is not yet in my data"). It also showcases the ability to send pre-defined messages ("hello") and potentially learn new words or phrases over time.</div>
+            </div>
+            <img class="project-img-1 hide" src="project5.png">
+        </div>
         
     </div>
+
+    <div class="contact" id="contact">
+        <div class="con-title">Contact</div>
+        <div class="email">
+            <input type="email" placeholder="Email Address">
+        </div>
+        <div class="message">
+            <textarea placeholder="Your massage..."></textarea>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2024 World Citi Colleges Antipolo City | Designed by Tom Carlo Ballesca
+    </div>
+    <script>
+        act = false;
+        //const btn_pos = [true, false];
+
+        let floatBox = document.querySelector(".coll-nav");
+        let color_btn_1 = document.querySelector("#btn-1");
+        let color_btn_2 = document.querySelector("#btn-2");
+        let color_btn_3 = document.querySelector("#btn-3");
+        function menu() {
+            if (act==false) {
+                floatBox.style.visibility = "visible";
+                act = true;
+            } else{
+                floatBox.style.visibility = "hidden";
+                act = false;
+            }    
+	    }
+
+        window.addEventListener("scroll", (event) => {
+            let scroll = this.scrollY;
+
+            if (scroll <= 300) {
+                //console.log(scroll)
+                color_btn_1.style.color = "crimson";
+                color_btn_2.style.color = "darkgray";
+                color_btn_3.style.color = "darkgray";
+            }else if (scroll >= 600 && scroll <=1200) {
+                //console.log(scroll)
+                color_btn_1.style.color = "darkgray";
+                color_btn_2.style.color = "crimson";
+                color_btn_3.style.color = "darkgray";
+            } else if (scroll >= 1400 && scroll <=3500){
+                color_btn_1.style.color = "darkgray";
+                color_btn_2.style.color = "darkgray";
+                color_btn_3.style.color = "crimson";
+            }
+            else if (scroll >= 3600){
+                color_btn_1.style.color = "darkgray";
+                color_btn_2.style.color = "darkgray";
+                color_btn_3.style.color = "darkgray";
+            }
+        });
+    </script>
 </body>
 </html>

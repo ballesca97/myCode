@@ -1,54 +1,60 @@
-html{
-    scroll-behavior: smooth;
+*{
+    padding: 0px;
+    margin: 0px;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
     padding: 0px;
-    margin: 0px;
     background-color: aliceblue;
     font-size: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.main-nav-bar, .left-nav, .right-nav, .main-view, .main-btn{
-   display: flex; 
-   align-items: center;
-}
+/* MAIN NAV */
 
-.main-nav-bar{
+.main-nav-bar, .left-nav, .coll-nav, .main-view, .main-btn{
+    display: flex; 
+    align-items: center;
+ }
+ 
+ .main-nav-bar{
+    box-shadow: 5px 7px 5px #aaaaaa7c;
     justify-content: space-between;
     padding: 20px;
     position: sticky;
     top: 1px;
     background-color: white;
     z-index: 9999;
-}
-
-a{
+ }
+ 
+ a{
     text-decoration: none;
     color: darkgray;
-}
-
+ }
+ 
 .left-nav{
     gap: 20px;
-}
-
+ }
+ 
 .title-img{
-    width: 30px;;
+    width: 30px;
     height:30px;
     cursor: pointer;
-}
-
+ }
+ 
 .title{
     font-weight: bold;
     cursor: pointer;
-}
-
-.right-nav{
-    gap: 30px;
-    color: darkgray;
-    cursor: pointer;
-}
+ }
+ 
+.coll-nav{
+     gap: 30px;
+     color: darkgray;
+ }
 
 .btn-1:hover{
     color: crimson;
@@ -64,6 +70,7 @@ a{
 }
 
 .hire-btn{
+    box-shadow: 5px 7px 5px #aaaaaa7c;
     padding: 10px 20px;
     background-color: darkblue;
     color: aliceblue;
@@ -74,20 +81,23 @@ a{
     background-color: crimson;
 }
 
-.main-view{
-    gap: 200px;
-    padding: 30px 100px;
+/* MAIN VIEW */
 
+.main-view{
+    gap: 300px;
+    padding: 80px 200px;
 }
+
+/* MAIN LEFT VIEW */
 
 .left-view{
     position: relative;
 }
 
 .human-img{
-    width: 500px;;
     height:700px;
     border-radius: 30px;
+    box-shadow: 5px 7px 5px #aaaaaa7c;
 }
 
 .small-img{
@@ -98,8 +108,13 @@ a{
     height:170px;
 }
 
-.main-title{
+/* MAIN RIGHT VIEW */
 
+.right-view{
+    
+}
+
+.main-title{
     font-size: 100px;
 }
 
@@ -110,6 +125,7 @@ a{
 .main-btn-1, .main-btn-2{
     padding: 20px 70px;
     cursor: pointer;
+    box-shadow: 5px 7px 5px #aaaaaa7c;
 }
 
 .main-btn-1{
@@ -143,17 +159,18 @@ a{
     opacity: 0.3;
 }
 
+/* ABOUT VIEW */
+
 .about{
     position: relative;
-    margin-top: 100px;
     height: 90vh;
-    margin-top: 100px;
+    margin-top: 50spx;
     background-color: rgba(0, 0, 0, 0.644);
 
 }
 
 .ani-box{
-    width: 99.2vw;
+    width: 99vw;
     overflow: hidden;
 }
 
@@ -216,11 +233,101 @@ a{
 .about-text{
     color: white;
     text-align: center;
-    margin: 20vh 30vw 0;
+    margin: 0 30vw 0;
     letter-spacing: 5px;
 }
 
 .about-flout{
     position: absolute;
     top: 0;
+    padding-top: 170px;
+}
+
+/* PROJECT VIEW */
+.project{
+    padding: 100px;
+    background-color: rgb(24, 23, 23);
+}
+
+.project-img-1{
+    height:400px;
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 5px 7px 5px #aaaaaa7c;
+}
+
+.project-img-2{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.project-set{
+    padding-bottom: 100px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.project-text{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.pro-text{
+    padding: 50px 100px;
+}
+
+/* CONTACT VIEW */
+
+.contact{
+    padding-bottom: 50px;
+}
+
+.con-title{
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+    font-weight: bold;
+}
+
+.email, .message{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.email input{
+    font-size: 20px;
+    padding: 7px 15px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    color: rgb(110, 110, 110);
+    width: 400px;
+}
+
+.message textarea{
+    color: rgb(110, 110, 110);
+    resize: none;
+    font-size: 20px;
+    padding: 7px 15px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+}
+
+
+
+
+/* FOOTER VIEW */
+
+.footer-bottom{
+	background: #343a40;
+	color: #686868;
+	text-align: center;
+	font-size: 15px;
+	padding: 20px 0;
+	width: 100%;
 }
